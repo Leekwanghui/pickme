@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:padding="50dp"/>
+
+        <EditText
+            android:id="@+id/joinUserid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/joinUserpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/joinUserpasswordok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/joinUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/joinUserage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="나이대"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/joinUsersex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="성별"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="위치 서비스 동의"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="알람 동의"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_button"
+            android:text="회원가입"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</ScrollView>
