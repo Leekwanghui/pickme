@@ -16,6 +16,12 @@
             android:textSize="30dp"
             android:gravity="center"
             android:padding="50dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/pickme_Coral" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

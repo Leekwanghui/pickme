@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import co.pm.pickme.IdforgotActivity
+import co.pm.pickme.PassforgotActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,9 +17,14 @@ class LoginActivity : AppCompatActivity() {
         val intent = Intent(this, JoinActivity::class.java)
         startActivity(intent)
     }
-//임시로 확인하기 위해 연결해둔거지 여기에 연결할 거 아님
+
     fun ontvForgotPassword(view: View) {
-        val intent = Intent(this, CommunityActivity::class.java)
+        val intent = Intent(this, PassforgotActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun ontvForgotId(view: View){
+        val intent = Intent(this,IdforgotActivity::class.java)
         startActivity(intent)
     }
 }

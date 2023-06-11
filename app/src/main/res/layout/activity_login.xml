@@ -52,15 +52,26 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tvForgotId"
+            android:onClick="ontvForgotId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="아이디 찾기"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="left"
+            android:layout_marginBottom="100dp"/>
+
+        <TextView
             android:id="@+id/tvForgotPassword"
             android:onClick="ontvForgotPassword"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="아이디, 비밀번호 찾기"
+            android:text="비밀번호 찾기"
             android:textColor="@android:color/darker_gray"
-            android:gravity="left"
-            android:layout_marginBottom="100dp"/>
+            android:gravity="center"
+            android:layout_marginBottom="100dp" />
 
         <TextView
             android:id="@+id/tvSignUp"
@@ -70,7 +81,7 @@
             android:layout_weight="1"
             android:text="회원가입"
             android:textColor="@android:color/darker_gray"
-            android:gravity="right"/>
+            android:gravity="right" />
     </LinearLayout>
 
     <Button

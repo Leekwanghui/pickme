@@ -24,6 +24,12 @@
         <activity
             android:name="co.kr.pm.pickme.CommunityActivity"
             android:exported="true"/>
+        <activity
+            android:name="co.pm.pickme.IdforgotActivity"
+            android:exported="true"/>
+        <activity
+            android:name="co.pm.pickme.PassforgotActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

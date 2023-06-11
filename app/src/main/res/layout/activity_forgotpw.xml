@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/notosanskr_medium" />
+
+    <EditText
+        android:id="@+id/forgotusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/forgotuserphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="전화번호"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인증번호 발송"
+        android:textColor="@color/pickme_Coral"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:id="@+id/forgotusernum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="인증번호"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/btnJoin"
+        android:onClick="ontvfindpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="비밀번호 찾기"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

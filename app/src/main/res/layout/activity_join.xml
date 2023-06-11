@@ -15,9 +15,10 @@
             android:layout_height="wrap_content"
             android:text="회원가입"
             android:textColor="#000000"
-            android:textSize="50dp"
+            android:textSize="28dp"
             android:gravity="center"
-            android:padding="40dp" />
+            android:padding="15dp"
+            android:fontFamily="@font/notosanskr_medium" />
 
         <EditText
             android:id="@+id/joinUserid"
@@ -27,11 +28,16 @@
             android:inputType="textPersonName"
             android:maxLines="1"
             android:imeOptions="actionNext"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp"
             android:paddingLeft="50dp"
             android:paddingRight="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아이디 중복 판별"
+            android:textColor="@color/pickme_Coral"
+            android:paddingLeft="20dp"/>
 
         <EditText
             android:id="@+id/joinUserpassword"
@@ -41,6 +47,7 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:imeOptions="actionNext"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
@@ -53,9 +60,15 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:imeOptions="actionNext"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 재확인"
+            android:textColor="@color/pickme_Coral"
+            android:paddingLeft="20dp"/>
 
         <EditText
             android:id="@+id/joinUsername"
@@ -65,10 +78,24 @@
             android:inputType="text"
             android:maxLines="1"
             android:imeOptions="actionNext"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
 
+        <EditText
+            android:id="@+id/joinUserphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="전화번호"
+            android:inputType="number"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_bg"
+            android:padding="20dp" />
+
+        <!--라디오 버튼-->
         <EditText
             android:id="@+id/joinUserage"
             android:layout_width="match_parent"
@@ -80,7 +107,7 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
-
+        <!--라디오 버튼-->
         <EditText
             android:id="@+id/joinUsersex"
             android:layout_width="match_parent"
@@ -92,27 +119,29 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
-
+        <!--체크박스-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="위치 서비스 동의"
-            android:padding="20dp"/>
-
+            android:padding="10dp"/>
+        <!--체크박스-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="알람 동의"
-            android:padding="20dp"/>
+            android:padding="10dp"/>
 
         <Button
             android:id="@+id/btnJoin"
+            android:onClick="onjoin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="40dp"
             android:background="@drawable/rounded_button"
             android:text="회원가입"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:layout_marginTop="30dp" />
 
 
     </LinearLayout>
