@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- 뒤로가기 버튼 이미지 설정 -->
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="start"
+            android:onClick="roomback"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/searchEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="방 만들기"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/mrStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="출발지"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/mrFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="목적지"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/mrName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="방 제목을 입력하세요."
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp" />
+
+    <EditText
+        android:id="@+id/mrPeople"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="인원수"
+        android:inputType="number"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_bg"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:onClick="mrMade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/rounded_button"
+        android:text="방 만들기"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>

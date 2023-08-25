@@ -83,19 +83,19 @@
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
 
+        <!--라디오 버튼-->
         <EditText
             android:id="@+id/joinUserphone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="전화번호"
-            android:inputType="number"
-            android:maxLines="1"
-            android:imeOptions="actionNext"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_bg"
+            android:hint="전화번호"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLines="1"
             android:padding="20dp" />
 
-        <!--라디오 버튼-->
         <EditText
             android:id="@+id/joinUserage"
             android:layout_width="match_parent"
@@ -120,13 +120,13 @@
             android:background="@drawable/rounded_bg"
             android:padding="20dp" />
         <!--체크박스-->
-        <TextView
+        <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="위치 서비스 동의"
             android:padding="10dp"/>
         <!--체크박스-->
-        <TextView
+        <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="알람 동의"

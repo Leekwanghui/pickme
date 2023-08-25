@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import co.pm.pickme.IdforgotActivity
-import co.pm.pickme.PassforgotActivity
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +22,12 @@ class LoginActivity : AppCompatActivity() {
     }
 
     fun ontvForgotId(view: View){
-        val intent = Intent(this,IdforgotActivity::class.java)
+        val intent = Intent(this, IdforgotActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun ontvLogin(view: View){
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

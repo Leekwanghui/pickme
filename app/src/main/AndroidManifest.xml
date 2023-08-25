@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="co.kr.pm.pickme">
+
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+
+<!--    &lt;!&ndash; 음성 호트워드 감지 권한 &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
 
     <application
         android:allowBackup="true"
@@ -13,8 +20,9 @@
             android:name="co.kr.pm.pickme.JoinActivity"
             android:exported="true"/>
         <activity
-            android:name="co.kr.pm.pickme.LoginActivity"
-            android:exported="true">
+            android:name="co.kr.pm.pickme.MainActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity,Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +33,21 @@
             android:name="co.kr.pm.pickme.CommunityActivity"
             android:exported="true"/>
         <activity
-            android:name="co.pm.pickme.IdforgotActivity"
+            android:name=".IdforgotActivity"
             android:exported="true"/>
         <activity
-            android:name="co.pm.pickme.PassforgotActivity"
+            android:name=".PassforgotActivity"
             android:exported="true"/>
+        <activity
+            android:name=".Community2Activity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity,Instantiatable" />
+
     </application>
 
 </manifest>

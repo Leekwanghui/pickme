@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFF"/> <!-- 하단바의 배경 색상 설정 -->
+     <!-- 테두리의 둥글기 정도 설정 -->
+    <corners
+        android:radius="5dp"
+        android:topLeftRadius="30dp"
+        android:topRightRadius="30dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp" />
+</shape>

@@ -1,11 +1,9 @@
-package co.pm.pickme
+package co.kr.pm.pickme
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import co.kr.pm.pickme.LoginActivity
-import co.kr.pm.pickme.R
 
 class IdforgotActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

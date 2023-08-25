@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_item_1"
+        android:icon="@drawable/first"
+        android:title="홈" />
+    <item
+        android:id="@+id/nav_item_2"
+        android:icon="@drawable/second"
+        android:title="커뮤니티" />
+    <item
+        android:id="@+id/nav_item_3"
+        android:icon="@drawable/three"
+        android:title="이용기록" />
+    <item
+        android:id="@+id/nav_item_4"
+        android:icon="@drawable/four"
+        android:title="마이페이지" />
+</menu>
+

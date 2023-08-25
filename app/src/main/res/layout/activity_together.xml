@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="4dp"
+        android:background="@drawable/rounded_top"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <!-- 뒤로가기 버튼 이미지 설정 (위치가 좆나이상함) -->
+<!--    <ImageView-->
+<!--        android:id="@+id/backButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/back_arrow"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:onClick="togetherback"-->
+<!--        android:colorFilter="#FFFFFF"/>-->
+
+
+<!--    코틀린 코드-->
+<!--    import android.graphics.Color-->
+<!--    import android.os.Bundle-->
+<!--    import androidx.appcompat.app.AppCompatActivity-->
+<!--    import kotlinx.android.synthetic.main.activity_main.* // 레이아웃 파일에 정의된 뷰들을 가져옴-->
+
+<!--    class MainActivity : AppCompatActivity() {-->
+
+<!--    override fun onCreate(savedInstanceState: Bundle?) {-->
+<!--    super.onCreate(savedInstanceState)-->
+<!--    setContentView(R.layout.activity_main) // 레이아웃 설정-->
+
+<!--    val backButton = findViewById<ImageView>(R.id.backButton)-->
+<!--    backButton.setColorFilter(Color.WHITE) // 흰색으로 설정-->
+<!--    }-->
+<!--    }-->
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/image1"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:adjustViewBounds="true" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/image2"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:adjustViewBounds="true" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/image3"-->
+<!--            android:scaleType="centerInside"-->
+<!--            android:adjustViewBounds="true" />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>
