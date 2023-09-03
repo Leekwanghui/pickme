@@ -4,16 +4,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import co.kr.pm.pickme.R
 
-class Community2Activity : AppCompatActivity() {
+class SearchPeopleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_community2)
+        setContentView(R.layout.activity_searchpeople)
     }
 
-    fun cmback(view: View) {
-        val intent = Intent(this, CommunityActivity::class.java)
+    fun bangje(view: View) {
+        val intent = Intent(this, ChaActivity::class.java)
         startActivity(intent)
     }
 }

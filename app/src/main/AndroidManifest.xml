@@ -3,11 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="co.kr.pm.pickme">
 
-<!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
+    <!--    <uses-permission android:name="android.permission.RECORD_AUDIO" />-->
 
-<!--    &lt;!&ndash; 음성 호트워드 감지 권한 &ndash;&gt;-->
-<!--    <uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD"-->
-<!--        tools:ignore="ProtectedPermissions" />-->
+    <!--    &lt;!&ndash; 음성 호트워드 감지 권한 &ndash;&gt;-->
+    <!--    <uses-permission android:name="android.permission.CAPTURE_AUDIO_HOTWORD"-->
+    <!--        tools:ignore="ProtectedPermissions" />-->
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
             android:name="co.kr.pm.pickme.JoinActivity"
             android:exported="true"/>
         <activity
-            android:name="co.kr.pm.pickme.MainActivity"
+            android:name="co.kr.pm.pickme.LoginActivity"
             android:exported="true"
             tools:ignore="DuplicateActivity,Instantiatable">
             <intent-filter>
@@ -29,9 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="co.kr.pm.pickme.CommunityActivity"
-            android:exported="true"/>
+<!--        <activity-->
+<!--            android:name="co.kr.pm.pickme.CommunityActivity"-->
+<!--            android:exported="true"/>-->
         <activity
             android:name=".IdforgotActivity"
             android:exported="true"/>
@@ -47,6 +47,32 @@
             android:name=".SearchActivity"
             android:exported="true"
             tools:ignore="DuplicateActivity,Instantiatable" />
+
+        <activity
+            android:name="co.kr.pm.pickme.MainActivity"
+            android:exported="true"/>
+
+        <activity android:name=".CommunityActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".RecordActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".MyPageActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".WritecomActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".WritegeActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".SearchPeopleActivity">
+            android:exported="true"
+        </activity>
+        <activity android:name=".ChaActivity">
+            android:exported="true"
+        </activity>
 
     </application>
 

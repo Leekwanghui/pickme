@@ -13,5 +13,10 @@ class CommunityActivity : AppCompatActivity() {
         setContentView(R.layout.activity_community)
     }
 
+    fun comge(view: View) {
+        val intent = Intent(this, Community2Activity::class.java)
+        startActivity(intent)
+    }
+
 
 }
